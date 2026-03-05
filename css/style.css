@@ -1,0 +1,40 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Typography */
+    --font-family: Poppins, sans-serif;
+    /* Font size */
+    --font-title: 2.25rem;
+    --font-heading: 1.25rem;
+    --font-time: 0.075rem;
+    /* Font weight */
+    --font-semi: 600;
+    --font-med: 500;
+    /* Font color */
+    --clr-heading: #000000;
+    --clr-date: #4D5562;
+    /* Background */
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.author-info {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    color: rgb(55, 65, 81);
+}
+
+.author-info a {
+    text-decoration: none;
+}
