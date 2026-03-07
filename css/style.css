@@ -27,6 +27,11 @@ html {
 
 body {
     min-height: 100vh;
+    line-height: 1.6;
+    font-family: var(--font-family);
+    display: grid;
+    place-items: center;
+    background-color: var(--bg-article);
 }
 
 .author-info {
