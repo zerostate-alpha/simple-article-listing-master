@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgba(2, 87, 2, 0.226);
 }
 
 :root {
@@ -10,7 +11,7 @@
     /* Font size */
     --font-title: 2.25rem;
     --font-heading: 1.25rem;
-    --font-time: 0.075rem;
+    --font-time: 0.875rem;
     /* Font weight */
     --font-semi: 600;
     --font-med: 500;
@@ -34,11 +35,63 @@ body {
     background-color: var(--bg-article);
 }
 
+/* content container this hold all relevant content */
 .Content--container {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
 }
+
+.article--header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 3rem;
+}
+
+.article--container {
+    padding: 1.25rem;
+}
+
+.article--post img {
+    width: 150px;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: var(--font-title);
+    font-weight: var(--font-semi);
+    color: var(--clr-heading);
+}
+
+h2 {
+    font-size: var(--font-semi);
+    font-size: var(--font-heading);
+    color: var(--clr-heading);
+}
+
+time {
+    font-size: var(--font-time);
+    font-weight: var(--font-med);
+    color: var(--clr-date);
+}
+
+.article--post {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 1.25rem;
+}
+
+.article--content {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    row-gap: 1rem;
+}
+
 
 .author-info {
     font-size: 14px;
