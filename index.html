@@ -12,39 +12,56 @@
   </head>
   <body>
 
-    <article class="article--post">
+    <!-- Content Container: Single Column   -->
+    <article class="Content--container">
 
-
+      <!-- Header: main title and image seperator-->
       <header class="article--header">
         <h1>We release interesting articles about technology</h1>
-        <img src="/resources/Seperator.svg" alt="Image of: ////// Creating a visual seperator">
+        <img class="separator--img" src="/resources/Seperator.svg" alt="Image of: ////// Creating a visual seperator">
       </header>
 
+      <!-- Article Container: Single Column   -->
       <div class="article--container">
 
-        <div class="article">
-          <img src="/resources/photo_1@2x.png" alt="">
-          <p>Unlocking the Power of Cloud Computing: A Guide to Scalable Solutions <time datetime="">November 12, 2024</time></p>
-        </div>
+        <!-- Article post: flex wrapped alloweing to switch from row to column -->
+        <div class="article--post">
+          <img class="article--img" src="/resources/photo_1@2x.png" alt="">
 
-        <div class="article">
-          <img src="/resources/photo_3@2x.png" alt="">
-          <p>The Future of AI: How Machine Learning is Revolutionizing Industries <time datetime="">November 12, 2024</time></p>
+          <div class="article-content">
+            <h2>Unlocking the Power of Cloud Computing: A Guide to Scalable Solutions</h2>
+            <time datetime="2024-11-12">November 12, 2024</time>
+          </div>
         </div>
+        
+        <!-- Article post: flex wrapped alloweing to switch from row to column -->
+        <div class="article--post">
+          <img class="article--img" src="/resources/photo_3@2x.png" alt="">
 
-        <div class="article">
-          <img src="/resources/photo_2@2x.png" alt="">
-          <p>The Impact of 5G on Business: How Faster Networks are Transforming the Way We Work <time datetime="">November 12, 2024</time></p>
+          <div class="article-content">
+            <h2>The Future of AI: How Machine Learning is Revolutionizing Industries</h2>
+            <time datetime="2024-11-12">November 12, 2024</time>
+          </div>
+          
+        </div>
+        <!-- Article post: flex wrapped alloweing to switch from row to column -->
+        <div class="article--post">
+          <img class="article--img" src="/resources/photo_2@2x.png" alt="">
+
+          <div class="article-content">
+            <h2>The Impact of 5G on Business: How Faster Networks are Transforming the Way We Work</h2>
+            <time datetime="2024-11-12">November 12, 2024</time>
+          </div>
+          
         </div>
 
       </div>
 
-
     </article>
     
-    <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
+    <footer class="author-info">
+      Coded by <a href="#">Sam Walsh</a> | Challenge by
       <a href="https://www.devchallenges.io?ref=challenge" target="_blank" rel="noopener noreferrer">devChallenges.io</a>.
-    </div>
+    </footer>
   </body>
 </html>
